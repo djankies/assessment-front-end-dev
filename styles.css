@@ -1,12 +1,45 @@
+* {
+    --yellow: #ffee07;
+    --red: #ca0209;
+    --green: #289403;
+    --transparent-yellow: #ffee078a;
+}
 body {
     background: #fff;
     background-image: url("pizza.png");
     background-repeat: no-repeat;
-    font-family: "poppins", sans-serif;
     background-size: 2000px;
     background-position: 40vw 10vh;
     margin: 0 8vw;
     z-index: -1;
+    font-family: "poppins", sans-serif;
+}
+
+.green-background {
+    background-color: var(--green);
+}
+
+.red-background {
+    background-color: var(--red);
+}
+
+.yellow-background {
+    background-color: var(--yellow);
+}
+.transparent-background {
+    background-color: var(--transparent-yellow) 8a;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo {
+    max-width: 10vw;
+    min-width: 80px;
+    margin-right: 2rem;
 }
 
 nav {
@@ -15,7 +48,7 @@ nav {
     align-items: center;
     width: 100%;
     font-size: 1.2rem;
-    border-bottom: 2rem solid #289403;
+    border-bottom: 2rem solid var(--green);
 }
 
 ol {
@@ -38,7 +71,7 @@ li {
 }
 
 a {
-    color: #e40406;
+    color: var(--red);
     font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
@@ -46,7 +79,7 @@ a {
 }
 
 a:hover {
-    color: #289403;
+    color: var(--green);
     transition: 0.2s;
 }
 
@@ -77,13 +110,13 @@ button,
     padding: 1em;
     border-radius: 2em;
     border: 2.5px solid black;
-    background-color: #ffef07;
     margin: 0.5em;
     align-self: center;
+    background-color: var(--transparent-yellow);
 }
 
 button:hover {
-    background-color: #289403;
+    background-color: var(--yellow);
     transition: 0.2s;
     cursor: pointer;
 }
@@ -92,12 +125,14 @@ button:hover {
     margin: 2rem 0;
     width: auto;
 }
+
 #submit-button:hover {
     margin: 2rem 0;
     width: auto;
-    background-color: #289403;
+    background-color: var(--yellow);
     transition: 0.2s;
 }
+
 #submit-button:active {
     margin: 2rem 0;
     width: auto;
@@ -109,32 +144,21 @@ h1 {
     max-width: 15ch;
     margin: 2rem 0;
 }
+
 h3 {
     font-size: 2rem;
     max-width: 15ch;
     margin: 2rem 0;
     font-weight: 600;
     font-style: italic;
-    background-color: #289403;
-    padding: 1rem 10vw 1rem 02rem;
+    background-color: var(--green);
+    padding: 1rem 10vw 1rem 2rem;
 }
 
 p {
     margin: 3rem 0;
     max-width: 70ch;
     font-size: 1.1rem;
-}
-
-header {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.logo {
-    max-width: 10vw;
-    min-width: 80px;
-    margin-right: 2rem;
 }
 
 input[type="checkbox"] {
@@ -148,15 +172,16 @@ form {
 
 .divider {
     margin: 1rem 0 4rem;
-    border-bottom: 5rem solid #ca0209;
+    border-bottom: 5rem solid var(--red);
 }
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 10vh;
-    background-color: #279004;
+    background-color: var(--green);
     border-top: #000 10px solid;
     margin-top: 5rem;
 }
@@ -193,6 +218,7 @@ input[type="email"]:focus {
     font-size: 1.2rem;
     transition: 0.2s;
     padding-left: 1rem;
+    border-bottom-width: 2.5px;
 }
 
 input[type="checkbox"]:hover,
@@ -204,7 +230,13 @@ label {
     font-size: 1rem;
     font-weight: 400;
 }
+
 form {
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+#input-text-block {
+    display: block;
+    height: 12rem;
 }

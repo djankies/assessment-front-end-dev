@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- BEGIN: Meta tags -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- END: Meta tags -->
+
         <title>Homepage</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,500;1,600;1,700;1,800;0,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap"
-            rel="stylesheet"
-        />
-
         <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
         <div id="background">
+            <!-- BEGIN: Header -->
             <header>
                 <img
                     src="https://lh3.googleusercontent.com/proxy/DCfcDtv5WkNNfAfGIPuAPDvNHd1D0tWzPz7tTCKlKgjKMVky8HfJKDvlPpKzNdyWUskK7qGZjUj3Oxpi-ZSa0wS8M6DbY6BNpRDPyngDcR5FqxC4BWdt9-UubG58BKO6GSj8nug4O7rS-zPh"
-                    alt="Rubber Duck Pizza Guy"
+                    alt="Rubber ducky Pizza Guy"
                     class="logo"
                 />
                 <nav>
@@ -37,12 +34,16 @@
                     </ol>
                 </nav>
             </header>
+            <!-- END: Header -->
+
             <div class="divider"></div>
+
             <div id="hero">
                 <h1>WELCOME TO THIS WEBSITE.</h1>
             </div>
+
             <p>
-                Welcome to the website of the Rubber Duck Pizza Guy. Here,
+                Welcome to the website of the Rubber ducky Pizza Guy. Here,
                 you'll find a quirky mix of rubber ducks and delicious pizza
                 creations that will surely make you smile.<br /><br />
 
@@ -50,14 +51,15 @@
                 tantalize your taste buds. From classic favorites to daring
                 combinations, there's something for everyone to enjoy.<br /><br />
 
-                Join our rubber duck community and dive into a world where pizza
+                Join our rubber ducky community and dive into a world where pizza
                 and fun go hand in hand. Stay tuned for special offers, events,
                 and more surprises coming your way soon.<br /><br />
 
                 So, sit back, relax, and get ready for a pizza experience like
-                no other. The Rubber Duck Pizza Guy is here to bring joy and
+                no other. The Rubber ducky Pizza Guy is here to bring joy and
                 flavor to your world.
             </p>
+
             <h3>Here is what I like about you!</h3>
             <ul>
                 <li>You live at 22 Hemingway</li>
@@ -67,25 +69,44 @@
             </ul>
 
             <p id="signature">Rubberducky<br />Pizzaguy</p>
+
             <div class="divider"></div>
+
             <h2>Sign up for our spam list!</h2>
             <form id="contact">
-                Your name:
-                <input type="text" placeholder="Type-ey, type-ey..." />
+                <div id="input-text-block">
+                    <input
+                        type="text"
+                        placeholder="Type-ey, type-ey..."
+                        id="name"
+                        required
+                        autocomplete="name"
+                    /><br />
 
-                Email:
-                <input type="email" placeholder="More type-ey..." /><br />
-
+                    Email:
+                    <input
+                        type="email"
+                        placeholder="More type-ey..."
+                        id="email"
+                        required
+                        autocomplete="email"
+                    /><br />
+                </div>
                 How did you hear about us?<br />
                 <label
-                    ><input class="checkbox" type="checkbox" value="friend" />A
-                    friend</label
+                    ><input
+                        class="checkbox"
+                        type="checkbox"
+                        value="friend"
+                        id="friend"
+                    />A friend</label
                 ><br />
                 <label
                     ><input
                         class="checkbox"
                         type="checkbox"
                         value="google"
+                        id="google"
                     />Google</label
                 ><br />
                 <label
@@ -93,18 +114,29 @@
                         class="checkbox"
                         type="checkbox"
                         value="registry"
+                        id="registry"
                     />The "registry"</label
                 ><br />
                 <label
-                    ><input class="checkbox" type="checkbox" value="Alec" />Alec
-                    Prettyman</label
+                    ><input
+                        class="checkbox"
+                        type="checkbox"
+                        value="Alec"
+                        id="alec"
+                    />Alec Prettyman</label
                 ><br />
-                <input id="submit-button" type="submit" />
+                <input
+                    id="submit-button"
+                    type="submit"
+                    class="yellow-background transparent-background"
+                />
             </form>
+
             <footer>
-                <p>© 2024 Rubber Duck Pizza Guy<br /></p>
+                <p>© 2024 Rubber ducky Pizza Guy<br/></p>
             </footer>
         </div>
+
         <script src="about.js"></script>
     </body>
 </html>
