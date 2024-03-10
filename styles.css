@@ -140,8 +140,8 @@ button:hover {
 }
 
 h1 {
-    font-size: 5rem;
-    max-width: 15ch;
+    font-size: clamp(3rem, 8vw, 6rem);
+    max-width: min(80vw,13ch);
     margin: 2rem 0;
 }
 
