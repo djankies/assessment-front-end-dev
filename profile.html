@@ -1,80 +1,85 @@
 <!DOCTYPE html>
-<header lang="en">
+<html lang="en">
     <head>
+        <!-- BEGIN: Meta tags -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- END: Meta tags -->
+
         <title>It's Me!</title>
+
+        <!-- Stylesheets -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
         />
-        <link href="styles.css" rel="stylesheet" />
+        <link href="styles2.css" rel="stylesheet" />
     </head>
-    <html>
-        <body class="no-background">
-            <div>
-                <header>
-                    <img
-                        src="https://lh3.googleusercontent.com/proxy/DCfcDtv5WkNNfAfGIPuAPDvNHd1D0tWzPz7tTCKlKgjKMVky8HfJKDvlPpKzNdyWUskK7qGZjUj3Oxpi-ZSa0wS8M6DbY6BNpRDPyngDcR5FqxC4BWdt9-UubG58BKO6GSj8nug4O7rS-zPh"
-                        alt="Rubber ducky Pizza Guy"
-                        class="logo"
-                    />
-                    <nav>
-                        <ol>
-                            <li class="crumb">
-                                <a href="./home.html">Home</a>
-                            </li>
-                            <li class="crumb">
-                                <a href="./profile.html">Profile</a>
-                            </li>
-                            <li class="crumb">
-                                <a href="./about.html">About</a>
-                            </li>
-                        </ol>
-                    </nav>
-                </header>
-                <div class="divider"></div>
-                <div id="this-is-me">
-                    <h1>Me, The Rubber ducky Pizza Guy.</h1>
-                </div>
+    <body>
+        <!-- Header section -->
+        <header>
+            <img
+                src="static/rubber-ducky-pizza-guy.jpg"
+                alt="Rubber ducky Pizza Guy"
+            />
+
+            <nav class="nav">
+                <ol>
+                    <li>
+                        <a href="./home.html" class="link">Home</a>
+                    </li>
+                    <li>
+                        <a href="./profile.html" class="link">Profile</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="link">About</a>
+                    </li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- Main section -->
+        <main>
+            <!-- About Me section -->
+            <section>
+                <h1>Me, The Rubber ducky Pizza Guy.</h1>
                 <p>
                     Hello, my name is Rubber ducky Pizza Guy. I am a pizza
                     enthusiast and a rubber ducky collector. I love to create
                     unique pizza flavors that bring joy and flavor to people's
-                    lives. My rubber ducky collection is one of a kind and brings
-                    a smile to everyone who sees it. I am passionate about pizza
-                    and rubber ducks, and I am excited to share my passion with
-                    the world.
+                    lives. My rubber ducky collection is one of a kind and
+                    brings a smile to everyone who sees it. I am passionate
+                    about pizza and rubber ducks, and I am excited to share my
+                    passion with the world.
                 </p>
+            </section>
 
-                <div>
-                    <h3 class="green-background">My Career Goals</h3>
-                    <ul id="career goals">
-                        <li>Grow my rubber ducky collection</li>
-                        <li>Make people smile</li>
-                        <li>Create unique pizza flavors</li>
-                        <li>Share my passion with the world</li>
-                    </ul>
-                </div>
-                <div id="button-container">
-                    <button id="color">
-                        My Favorite Color
-                    </button>
-                    <button id="place">
-                        My Favorite Place
-                    </button>
-                    <button id="ritual">
-                        My Favorite Ritual
-                    </button>
-                </div>
-                <footer class="red-background">
-                    <p>© 2024 Rubber ducky Pizza Guy</p>
-                </footer>
-            </div>
+            <!-- Career Goals section -->
+            <section>
+                <h2>My Career Goals</h2>
+                <ul>
+                    <li>Grow my rubber ducky collection</li>
+                    <li>Make people smile</li>
+                    <li>Create unique pizza flavors</li>
+                    <li>Share my passion with the world</li>
+                </ul>
+            </section>
 
-            <script src="profile.js"></script>
-        </body>
-    </html>
-</header>
+            <!-- Button section -->
+            <section id="button-container">
+                <button id="color">My Favorite Color</button>
+                <button id="place">My Favorite Place</button>
+                <button id="ritual">My Favorite Ritual</button>
+            </section>
+        </main>
+
+        <!-- Footer section -->
+        <footer>
+            <p>© 2024 Rubber ducky Pizza Guy</p>
+        </footer>
+
+        <script src="profile.js"></script>
+    </body>
+</html>

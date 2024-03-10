@@ -6,7 +6,7 @@
 }
 body {
     background: #fff;
-    background-image: url("pizza.png");
+    background-image: url("static/pizza.png");
     background-repeat: no-repeat;
     background-size: 2000px;
     background-position: 40vw 10vh;

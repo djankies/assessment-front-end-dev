@@ -1,0 +1,125 @@
+:root {
+    /* Theme Colors */
+    --red: #ff0000;
+    --green: #00ff00;
+    --yellow: #ffff00;
+    --yellow-transparent: rgba(255, 255, 0, 0.5);
+
+    /* Theme Assignments */
+    --background-color: white;
+    --text-color: black;
+    --header-color: var(--green);
+    --footer-color: black;
+    --navbar-color: white;
+}
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: flex;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0rem;
+    padding: 0;
+    /* Construction Helpers */
+    border: 1px solid red;
+    /* End Construction Helpers*/
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 6rem;
+    max-width: 13ch;
+
+}
+
+img {
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+.flex.row {
+    flex-direction: row;
+}
+.logo {
+    width: 10vw;
+    min-width: 90px;
+}
+
+header {
+    background-color: var(--header-color);
+    color: var(--text-color);
+    border-bottom: var(--red) 3vh solid;
+}
+
+nav {
+    background-color: var(--navbar-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-grow: 1;
+    border-bottom: var(--red) 3vh solid;
+}
+.nav-link {
+    display: inline;
+    padding: 0.5rem;
+    list-style: none;
+    text-decoration: none;}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    align-items: center;
+    flex-grow: 1;
+    border-bottom: var(--red) 3vh solid;
+    margin-bottom: 1rem;
+}
+
+/* Global Styles */
+
+/* 
+
+.container {}
+
+
+
+
+
+.content {}
+
+.footer {}
+
+*/
