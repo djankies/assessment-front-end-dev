@@ -4,20 +4,29 @@
     --green: #00ff00;
     --yellow: #ffff00;
     --yellow-transparent: rgba(255, 255, 0, 0.5);
+    --black: #000000;
+    --white: #ffffff;
 
     /* Theme Assignments */
     --background-color: white;
     --text-color: black;
-    --header-color: var(--green);
+    --header-color: white;
     --footer-color: black;
     --navbar-color: white;
+    --button-color: white;
+    --button-text-color: black;
+    --button-border-color: black;
+    --button-hover-color: black;
+    --button-hover-text-color: white;
+    --button-hover-border-color: white;
+    --button-active-color: black;
+    --button-active-text-color: white;
 }
 html {
     font-size: 16px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     display: flex;
-    
 }
 
 * {
@@ -36,7 +45,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    margin: 8rem;
+    margin: 8vw;
 }
 
 h1,
@@ -49,21 +58,38 @@ h6 {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: clamp(2rem, 9vw, 10rem);
     max-width: 13ch;
+    line-height: 1;
+}
 
+h3 {
+    font-size: clamp(1rem, 5vw, 2rem);
+    font-style: italic;
+    background-color: var(--green);
+    max-width: calc(max(30vw, 15ch));
 }
 
 img {
-    object-fit: cover;
+}
+
+main li {
+    margin-left: 1rem;
 }
 
 .flex {
     display: flex;
 }
 
-.wrap {
+.flex.wrap {
     flex-wrap: wrap;
+}
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
 }
 
 .flex.column {
@@ -72,40 +98,45 @@ img {
 .flex.row {
     flex-direction: row;
 }
-.logo {
-    width: 10vw;
-    min-width: 90px;
+#logo {
+    object-fit: contain;
+    max-width: 8rem;
+    max-height: 8rem;
 }
 
 header {
     background-color: var(--header-color);
     color: var(--text-color);
-    border-bottom: var(--red) 3vh solid;
+    object-fit: "contain";
+    border-bottom: var(--green) 3vh solid;
+    align-items: center;
 }
 
 nav {
     background-color: var(--navbar-color);
     color: var(--text-color);
-    display: flex;
-    justify-content: left;
-    align-items: center;
     flex-grow: 1;
     border-bottom: var(--red) 3vh solid;
 }
 .nav-link {
     display: inline;
+    padding: 0rem 1rem 0rem 0rem ;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.nav-item {
     padding: 0.5rem;
     list-style: none;
-    text-decoration: none;}
+    height: 100%;
+}
 
 .navbar {
     display: flex;
-    justify-content: left;
-    gap: 1rem;
-    align-items: center;
+    gap: 0rem;
     flex-grow: 1;
-    border-bottom: var(--red) 3vh solid;
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 /* Global Styles */
@@ -123,3 +154,15 @@ nav {
 .footer {}
 
 */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        
+    }
+    nav {
+        width: 100%
+    }
+
+    
+}
